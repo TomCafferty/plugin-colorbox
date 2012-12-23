@@ -1,0 +1,7 @@
+base     colorbox
+author   Tom Cafferty
+email    tcafferty@glocalfocal.com
+date     2012-12-23
+name     Colorbox Plugin
+desc     Invokes the Colorbox software which is a jQuery lightbox implementation.
+url      http://dokuwiki.org/plugin:colorbox
