@@ -51,7 +51,7 @@ class syntax_plugin_colorbox extends DokuWiki_Syntax_Plugin {
 
 /**
  *
- * Create timeline output 
+ * Create colorbox link output 
  *
  * @author   Tom Cafferty <tcafferty@glocalfocal.com>
  *
