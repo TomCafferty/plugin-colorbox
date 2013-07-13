@@ -31,12 +31,9 @@ class action_plugin_colorbox extends DokuWiki_Action_Plugin {
     function colorbox_hookjs(&$event, $param) {
         global $INFO;
         global $ID;
-        $key = 'keywords';
-        
-        $metadata = p_get_metadata($ID, $key, false);
         
         // keyword colorbox used to include colorbox javascript files
-        if (strpos($metadata, 'colorbox') !== false) {
+        if (p_get_metadata($ID, 'plugin colorbox')) {
             $event->data['link'][] = array(
                             'rel' => 'stylesheet',
                             'type'    => 'text/css',

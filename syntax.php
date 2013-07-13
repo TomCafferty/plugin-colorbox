@@ -58,6 +58,13 @@ class syntax_plugin_colorbox extends DokuWiki_Syntax_Plugin {
  */
     function render($mode, &$R, $data) {
       global $conf;
+
+      // store meta info for this page
+      if($mode == 'metadata'){
+        $R->meta['plugin']['colorbox'] = true;
+        return true;
+      }
+
       if($mode != 'xhtml') return false;
 
       // Initialize settings from user input or conf file
