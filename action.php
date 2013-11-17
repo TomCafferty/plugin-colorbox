@@ -38,17 +38,17 @@ class action_plugin_colorbox extends DokuWiki_Action_Plugin {
                             'rel' => 'stylesheet',
                             'type'    => 'text/css',
                             '_data'   => '',
-                            'href'     => DOKU_BASE ."lib/scripts/colorbox/colorbox.css");
+                            'href'     => DOKU_BASE ."lib/plugins/colorbox/colorbox.css");
             $event->data['script'][] = array(
                             'type'    => 'text/javascript',
                             'charset' => 'utf-8',
                             '_data'   => '',
-                            'src'     => DOKU_BASE."lib/scripts/colorbox/jquery.colorbox-min.js");
+                            'src'     => DOKU_BASE."lib/plugins/colorbox/jquery.colorbox-min.js");
             $event->data['script'][] = array(
                             'type'    => 'text/javascript',
                             'charset' => 'utf-8',
                             '_data'   => '',
-                            'src'     => DOKU_BASE."lib/scripts/colorbox/linkColorbox.js");
+                            'src'     => DOKU_BASE."lib/plugins/colorbox/linkColorbox.js");
        }
     }
 }
