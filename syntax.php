@@ -44,7 +44,7 @@ class syntax_plugin_colorbox extends DokuWiki_Syntax_Plugin {
     /**
      * Handle the match
      */
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
         parse_str($match, $return);   
         return $return;
     }
@@ -56,7 +56,7 @@ class syntax_plugin_colorbox extends DokuWiki_Syntax_Plugin {
  * @author   Tom Cafferty <tcafferty@glocalfocal.com>
  *
  */
-    function render($mode, &$R, $data) {
+    function render($mode, Doku_Renderer $R, $data) {
       global $conf;
 
       // store meta info for this page
